@@ -9,20 +9,20 @@ public static void main (String[] args)
         BufferedReader br = new BufferedReader(isr);
         System.out.println("TAKSHASHILA UNIVERSITY");
         System.out.println("-----------------------");
-		System.out.println("Student Mark List");
+	System.out.println("Student Mark List");
         System.out.println("Enter the Enroll no:");
         String s1 = br.readLine();
         int a = Integer.parseInt(s1);
         System.out.println("Enter the stu name:");
         String s2=br.readLine();
         System.out.println("Enter the java mark:");
-		String s3 = br.readLine();
+	String s3 = br.readLine();
         int x = Integer.parseInt(s3);
-		System.out.println("Enter the SE mark:");
-		String s4 = br.readLine();
+	System.out.println("Enter the SE mark:");
+	String s4 = br.readLine();
         int y = Integer.parseInt(s4);
-		System.out.println("Enter the CN mark:");
-		String s5= br.readLine();
+	System.out.println("Enter the CN mark:");
+	String s5= br.readLine();
         int z = Integer.parseInt(s5);
         System.out.println("Result");
         int t = x+y+z;
@@ -30,28 +30,29 @@ public static void main (String[] args)
         int v = t/3;
         System.out.println("Average:" + v);
         if( x>=40&& y>=40 && z>=40)
+	{
+	System.out.println("Result:Pass");
+	}
+	else
 		{
-		System.out.println("Result:Pass");
+	System.out.println("Result : Fail");
 		}
-		else
-		{
-		System.out.println("Result : Fail");
-		}
-		if(t>=250)
-		{
-		System.out.println("Grade : 1thclass");
-		}
-		else if(t>=200)
-		{
-		System.out.println("Grade : 2thclass");
-		}
-		else if(t>=150)
-		{
-		System.out.println("Grade: 3thclass");
-		}
-		else{
-		System.out.println("Grade: 4thclass");
-		}
+	if(t>=250)
+	{
+	System.out.println("Grade : 1thclass");
+	}
+	else if(t>=200)
+	{
+	System.out.println("Grade : 2thclass");
+	}
+	else if(t>=150)
+	{
+	System.out.println("Grade: 3thclass");
+	}
+	else
+	{
+	System.out.println("Grade: 4thclass");
+	}
 	}
 	catch(Exception e)
 	{
