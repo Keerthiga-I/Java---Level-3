@@ -12,18 +12,18 @@ public static void main (String[] args)
         System.out.println("Starting Range:");
         String s1 = br.readLine();
         int a = Integer.parseInt(s1);
-		System.out.println("Ending Range:");
+	System.out.println("Ending Range:");
         String s2 = br.readLine();
         int b = Integer.parseInt(s2);
-		System.out.println("CALCULATE SUM");
+	System.out.println("CALCULATE SUM");
         System.out.println("Print the Series & Sum:");
-		for(int i=a;i<=b;i++)
+	for(int i=a;i<=b;i++)
+	{
+		if(i%3==0||i%5==0)
 		{
-			if(i%3==0||i%5==0)
-			{
-			System.out.println(i);
-			}
+		System.out.println(i);
 		}
+	}
 
 	}
 	catch(Exception e)
